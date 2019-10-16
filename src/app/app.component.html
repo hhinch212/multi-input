@@ -1,0 +1,16 @@
+<form [formGroup]="testGroup">
+<div class="row">
+<div class="col-md-3 form-group">
+<hello formControlName="ids"></hello>
+</div>
+</div>
+<div class="row">
+  <div class="col-md-3">
+    Ids from the control
+    <ul>
+      <li *ngFor="let val of testGroup.controls.ids.value">{{val}}</li>
+    </ul>
+    {{testGroup.controls['ids'].value}}
+  </div>
+</div>
+</form>

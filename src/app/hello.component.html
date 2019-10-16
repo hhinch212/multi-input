@@ -1,0 +1,26 @@
+<label class="control-label">
+    {{ label }}
+    <span class="icon-info-sign btn-link" [title]="criteriaLimit()"></span>
+  </label>
+<div class="ams-tokenfield form-control">
+  <textarea [id]="id"
+    class="ams-tokenfield-input form-control"
+    (keydown)="handleKeyDown($event)"
+    (paste)="handlePaste($event)"
+    (blur)="handleInput($event)"> </textarea>
+  <hr style="margin: 0; margin-bottom: 5px;">
+  <div class="ams-token-results">
+    <div *ngIf="!hasValues()">
+      <div class="no-content">No items added.</div>
+    </div>
+    <div *ngIf="hasValues()" class="ams-scrollable">
+      <span class="badge badge-light ams-badge" *ngFor="let item of itemList; let i = index">
+        <span class="ams-badge-text" [title]="item">{{item}}</span>
+        <span class="btn btn-xs btn-link icon-remove" (click)="remove(i)" title="Remove"></span>
+      </span>
+    </div>
+  </div>
+</div>
+<div class="ams-badge-count no-content">
+  {{ listSize() }}
+</div>

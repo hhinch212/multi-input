@@ -1,0 +1,50 @@
+/* Add application styles & imports to this file! */
+.ams-tokenfield {
+  height: auto;
+  padding-bottom: 0px;
+}
+
+.ams-tokenfield .ams-tokenfield-input {
+  background: none;
+  border: 0;
+  padding: 0;
+  margin-bottom: 5px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  height: 1.5em;
+  resize: none;
+  overflow: hidden;
+}
+
+.ams-token-results {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.ams-badge {
+  padding: 5px;
+  margin: 5px 5px;
+  display: inline-flex;
+  align-items: center;
+  line-height: 20px;
+}
+
+.ams-badge-text {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 230px;
+  display: inline-block;
+}
+
+.ams-scrollable {
+  max-height: 200px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-bottom: 5px;
+}
+
+.ams-badge-count {
+  margin-top: 5px;
+  text-align: left !important;
+}
